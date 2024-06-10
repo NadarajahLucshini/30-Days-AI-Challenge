@@ -288,6 +288,36 @@ This script captures images from a webcam, detects faces using a Haar Cascade Cl
 
 - **Cleanup**: Releases the webcam and closes all OpenCV windows when the loop exits.
 
+# day 08
+## Facial Emotion Recognition with OpenCV
+
+This README file provides instructions and information on how to set up and run a facial emotion recognition application using the `facial_emotion_recognition` package and OpenCV.
+
+#### Prerequisites
+- Python 3.x
+- `facial_emotion_recognition` library
+- OpenCV library
+
+#### Installation
+
+1. **Install OpenCV:**
+   ```bash
+   pip install opencv-python
+   ```
+
+2. **Install facial_emotion_recognition:**
+   ```bash
+   pip install facial_emotion_recognition
+   ```
 
 
+
+#### How to Run the Code
+
+1. **Save the script to a file**, for example, `emotion_recognition.py`.
+2. **Run the script** using Python:
+   ```bash
+   python emotion_recognition.py
+   ```
+3. **Press 'Esc'** to stop the video capture and close the application.
 
