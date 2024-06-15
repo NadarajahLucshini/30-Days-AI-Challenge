@@ -310,8 +310,6 @@ This README file provides instructions and information on how to set up and run 
    pip install facial_emotion_recognition
    ```
 
-
-
 #### How to Run the Code
 
 1. **Save the script to a file**, for example, `emotion_recognition.py`.
@@ -320,4 +318,53 @@ This README file provides instructions and information on how to set up and run 
    python emotion_recognition.py
    ```
 3. **Press 'Esc'** to stop the video capture and close the application.
+
+    # day 12
+## Object Detection with MobileNet SSD
+
+This project demonstrates real-time object detection using MobileNet SSD on live video feed from a webcam. The script detects and displays the classes "background," "car," and "bicycle."
+
+### Requirements
+
+- Python 3.7 or later
+- OpenCV
+- NumPy
+- imutils
+
+### Installation
+
+1. **Clone the repository or download the files:**
+   ```sh
+   git clone <repository_url>
+   cd <repository_directory>
+   ```
+
+2. **Download the MobileNet SSD model files:**
+   - [MobileNetSSD_deploy.caffemodel](https://github.com/chuanqi305/MobileNet-SSD/raw/master/MobileNetSSD_deploy.caffemodel)
+   - [MobileNetSSD_deploy.prototxt](https://github.com/chuanqi305/MobileNet-SSD/raw/master/deploy.prototxt)
+
+   Place these files in the same directory as the script.
+
+3. **Install the required Python packages:**
+   ```sh
+   pip install numpy opencv-python opencv-python-headless imutils
+   ```
+
+### Usage
+
+Run the script using the following command:
+```sh
+python day12.py
+```
+
+### Troubleshooting
+
+- Ensure that the `MobileNetSSD_deploy.prototxt` and `MobileNetSSD_deploy.caffemodel` files are present in the same directory as the script.
+- If you encounter issues with `cv2.imshow` or `cv2.destroyAllWindows`, ensure you have the correct OpenCV version installed. For headless environments, you can use `opencv-python-headless`.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+
 
